@@ -1,0 +1,435 @@
+:root {
+    --bg-color: #000000;
+    --logo-color: #fff;
+    --icon-color: #fff;
+    --link-color: #fff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+header{
+    height: 150px;
+    position: absolute;
+}
+#logo{
+    padding: 15px;
+    padding-left: 25px; 
+}
+#logo a {
+    text-decoration: none;
+}
+#logo h1{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--icon-color);
+    
+}
+#nav-links {
+   display: flex;
+}
+.social{
+    height: 70px;
+    margin-left: 18rem ;  
+    width: 20rem;
+    padding: 8px;
+    align-items: stretch;
+}
+.social>a{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+#nav-links>#links{
+    margin-left: 50rem;
+}
+#nav-links>#links>a{
+    margin:25px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--link-color);
+    transition: bg 2s;
+}
+
+#nav-links>#links>a:hover{
+    height: 25px;
+    width: auto;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgba(0,150,250,0.9),rgba(255,150,0,0.9));
+    color: #00f2ff;
+}
+
+/*-----------------------------------------------------------------------------------Main Section-------------------------------------------------------------------*/
+
+#main{
+    width: 100vw;
+    height: 100dvh;
+    background-color: var(--bg-color);
+    /* display: grid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profile{
+    content: '';
+    /* border: 5px solid #ffff; */
+    height: 85vh;
+    width: 50vw;
+    grid-template-columns: 25% 25%;
+    margin-top: 8.2rem;
+    /* margin-top: 10px; */
+}
+#profile img{
+    height: 85vh;
+    width: 50vw;
+    object-fit: fill;
+}
+#main #msg{
+    height: 80vh;
+    width: 50vw;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 5rem;
+    padding-top: 10rem;
+}
+#msg h1{
+    color: #fff;
+}
+.first{
+    font-size: 3rem;
+}
+.second{
+    padding-top: 2rem;
+    font-size: 5rem;
+}
+.second span{
+    color: rgb(119, 88, 13);
+}
+.third{
+    padding-top: 2rem;
+    font-size: 5rem;
+}
+
+/*------------------------------------------------------------------------About Section-----------------------------------------------------------------------------*/
+
+#about{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    display: grid;
+    border-top: 2px solid #fff;
+}
+#about #title {
+    height: auto;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+#about #title h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 5rem;
+}
+#about #icon {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 5% ;
+}
+#about #icon #intro {
+    text-decoration: none;
+    height: auto;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    display: grid; 
+}
+#about #icon #intro img {
+    align-content: center;
+}
+#about #icon #intro h1 {
+    color: #fff;
+    padding-bottom: 80%;
+}
+#about #icon #skill {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 30% 20%;
+}
+#about #icon #skill #images {
+    margin: 0px 20px;
+    align-content: center;
+    padding-top: 50%;
+}
+#about #icon #skill #images  img {
+    margin: 0px 20px;
+    height: 100px;
+    width: 100px;
+}
+#about #icon #skill h1 {
+    padding-top: 40%;
+    color: #fff;
+    display: grid;
+    margin-top: 20%;
+}  
+#about #icon #learningJourney {
+    text-decoration: none;
+    height: 50%;
+    width: 50vw;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}
+#about #icon #learningJourney #group {
+    height: 200px;
+    width: 150px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem
+}
+#about #icon #learningJourney #group #img1 {
+    height: 71px;
+    width: 70px;
+    margin-bottom: -4.5rem;
+    margin-left: 2rem;
+}
+#about #icon #learningJourney #group #img2 {
+    height: 71px;
+    width: 70px;
+} 
+#about #icon a {
+    text-decoration: none;
+}
+#about #icon #learningJourney h1 {
+    text-decoration: none;
+    color: #fff;
+    margin-left: -1rem;
+    padding-top: 0.7rem;
+}
+#about #icon #contactInfo {
+    height: 39vh;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+#about #icon #contactInfo img {
+    align-content: center;
+    height: 100px;
+    width: 100px;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+#about #icon #contactInfo h1 {
+    padding-bottom: 22%;
+    color: #fff;
+    text-align: center;
+}
+#intross {
+    display: grid;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #fff;
+}
+#intross #iconss {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: left;
+    height: 30vh;
+}
+#intross h1{
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 0.5em;
+}
+#intross #iconss img {
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-left: 15%;
+    margin-bottom: -0.5em;
+}
+#intross #iconss p{
+    font-size: 40px;
+    color: #fff;
+    text-align: justify;
+    float: right;
+    align-self: right;
+    margin-left: 40%;
+    margin-top: -8%;
+    margin-right: 10rem;
+} 
+#intross img{
+    height: 10rem;
+    margin-left: 50rem;
+    margin-top: 2rem;
+}
+#backgrounds {
+    display: grid;
+    grid-template-columns: minmax(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+#backgrounds .back img{
+    height: 200px;
+    width: 200px;
+    margin: 4em 45% 0em 45%;
+}
+#backgrounds .back p {
+    font-size: 35px;
+    color: #fff;
+    text-align: justify;
+    padding: 0em 3em 2em 3em;
+}
+#skills {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    background: #000;
+    border-top: 1px solid #fff;
+}
+#skills .sk {
+    height: 50vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#skills .sk h1 {
+    color: #fff;
+    padding-top: 0.3em;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+}
+#skills .sk p {
+    color: #fff;
+    margin: 1em 3.5rem;
+    text-align: center;
+    font-size: 24px;
+}
+#skills .sk #skImg {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr));
+    border: 1px solid #fff;
+    padding-top: 1em;
+}
+#skills .sk #skImg ol {
+    /* display: flex; */
+    margin: 0 5em;
+    justify-content: center;
+    align-items: center;
+    padding: 0 -3em;
+}
+#skills .sk #skImg ol li {
+    font-size: 32px;
+    float: left;
+    color: #fff;
+    padding: 0 3em;
+    padding-bottom: 0.2em;
+   margin-left: 3em;
+}
+#skills .sk #skImg ol li h2 {
+    padding-bottom: 1em;
+    font-size: 32px;
+    color: #fff;
+}
+#skills .sk #skImg ol li img {
+    height: 100px;
+    width: 100x;
+    /* border: 1px solid #fff; */
+    box-shadow:  20px 20px 20px #9e9393,  -20px -20px 20px #beb8b8;
+}
+#journeyyy{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    border: 1px solid #fff;
+}
+#journeyyy img{
+    margin-left: 50%;
+    width: 10rem;
+}
+#proJects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50vw,1fr));
+    margin-top: -2em;
+    justify-content: center;
+}
+#proJects h5 {
+    color: #fff;
+    font-size: 3em;
+    margin-left: 5rem;
+    justify-content: center;
+    text-align: center;
+    margin-left: 80%;
+    margin-top: 1em;
+    /* font-size: 5em; */
+}
+#proJects #proj1 h1, #proJects #proj2 h1{
+    font-size: 32px;
+}
+#proJects #proj1 img, #proJects #proj2 img{
+    height: 250px;
+    width: 250px;
+    margin-left: 22rem;
+    margin-top: 2em;
+}
+#proJects #proj2 img {
+    margin-left: 15rem;
+    width: 450px;
+}
+-----------------------------------------------------------------------Service Section-------------------------------------------------------------------------*/
+
+#service{
+    width: 100vw;
+    height: 100dvh;
+    background-color: #fff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*----------------------------------------------------------------------------Contact Section-----------------------------------------------------------------------*/
+
+#contact{
+    width: 100vw;
+    height: 100dvh;
+    background-color: #0e3822;
+    display: grid;
+}
+#introduction {
+    height: 100vh;
+    width: 100vw;
+    background: #000000;
+}
+
+
+
